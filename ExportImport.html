@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ExportImport.js"></script>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        button {
+            border: solid blue 4px;
+            border-radius: 20px;
+            background-color: aqua;
+            height: 70px;
+            width: 250px;
+            font-size: 30px;
+        }
+
+        button:hover {
+            background-color: rgb(16, 200, 16);
+        }
+    </style>
+
+    <script type="module">
+
+        import CallStudent from "./ExportImport.js";
+        document.getElementById("result").innerHTML = CallStudent();
+
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Export -Import Practical</h1>
+    </header>
+
+    <section>
+        <div id="result"></div>
+        <button onclick="fun1()">Import Student Data</button>
+    </section>
+
+</body>
+
+</html>
